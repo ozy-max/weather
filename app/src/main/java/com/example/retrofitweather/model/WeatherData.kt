@@ -1,4 +1,4 @@
-package com.example.retrofitweather.Model
+package com.example.retrofitweather.model
 
 data class WeatherData(
     val coord: Coord,
@@ -7,14 +7,15 @@ data class WeatherData(
     val main: Main,
     val visibility: Long,
     val wind: Wind,
-    val clouds: Int,
+    val clouds: Clouds,
     val dt: Long,
-    val sys: List<Sys>,
+    val sys: Sys,
     val timezone: Int,
     val id: Int,
     val name: String,
     val code: Int
+)
 
-) {
-
-}
+data class Clouds(
+    val all: Int
+)

@@ -1,4 +1,4 @@
-package com.example.retrofitweather.Model
+package com.example.retrofitweather.model
 
 data class Wind(
     val speed: Int,

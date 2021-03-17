@@ -1,4 +1,4 @@
-package com.example.retrofitweather.Model
+package com.example.retrofitweather.model
 
 data class Main(
     val temp: Float,

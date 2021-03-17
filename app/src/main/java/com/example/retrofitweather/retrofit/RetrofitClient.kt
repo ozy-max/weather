@@ -1,16 +1,16 @@
-package com.example.retrofitweather.Retrofit
+package com.example.retrofitweather.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
+    private const val BASE_URL = "https://api.openweathermap.org/"
     private var retrofit: Retrofit? = null
 
-
-    fun getClient(baseUrl: String): Retrofit {
+    fun getClient(): Retrofit {
         if (retrofit == null) {
             retrofit = Retrofit.Builder()
-                .baseUrl(baseUrl)
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }

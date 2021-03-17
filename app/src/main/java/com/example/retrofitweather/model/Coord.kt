@@ -1,4 +1,4 @@
-package com.example.retrofitweather.Model
+package com.example.retrofitweather.model
 
 data class Coord(
     val lon: Float,
